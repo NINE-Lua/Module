@@ -220,5 +220,6 @@ function DynamicModule.Unload(module)
     end
     return true
 end
-return DynamicModule
-_G.DynamicModule = DynamicModule
+if _G.DynamicModule == nil then
+    _G.DynamicModule = DynamicModule
+end
