@@ -220,3 +220,5 @@ function DynamicModule.Unload(module)
     end
     return true
 end
+
+_G.DynamicModule = DynamicModule
