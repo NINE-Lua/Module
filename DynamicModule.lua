@@ -1,3 +1,7 @@
+--[[
+        Put this infront of all of your code. Loadstring won't work on executors with an identity of 3 or under.
+]]--
+
 local DynamicModule = DynamicModule or {}
 local call_queue = {}
 local metrics = {calls_executed = 0, bindings_active = 0, cycles_completed = 0}
